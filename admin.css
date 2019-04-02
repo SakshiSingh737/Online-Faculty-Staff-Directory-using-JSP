@@ -1,0 +1,88 @@
+@charset "ISO-8859-1";
+
+body{
+	background:url("images/ad.jpg");
+}  
+#admin{
+	
+	font-family:monospace;
+	 float:none;
+ color: black;
+ text-align:center;
+ padding:14px 16px;
+ text-decoration:none;
+ font-size:50px;
+	
+}
+
+.align{
+	font-family:verdana;
+	 float:none;
+ color: black;
+ text-align:center;
+ padding:14px 16px;
+ text-decoration:none;
+ font-size:25px;
+	
+	
+}
+.modify{
+	font-family:verdana;
+	 float:none;
+ color: black;
+ text-align:left;
+ padding:14px 16px;
+ text-decoration:none;
+ font-size:25px;
+	
+	
+}
+
+#anchor{
+	 font-family:impact;
+	 float:left;
+	 color:black;
+	 font-size:20px;
+	 margin-left:auto;
+	 margin-right:auto;
+	
+}
+
+input{
+	margin: 40px 30px 10px 40px;
+    width:700px;
+    height:40px;
+    font-family: Verdana, Geneva, Tahoma, sans-;
+    font-size:17px;
+}
+#ss{
+	 width:300px;
+    height:40px;
+    background-color:#4bc7f4;
+}
+#sss{
+	 width:100px;
+    height:40px;
+    background-color:#4bc7f4;
+}
+#update{
+	margin: 40px 50px 30px 40px;
+    font-family:arial;
+    font-size:40px;
+	
+}
+
+#logout{
+margin: 200px 170px 30px 20px;
+	
+}
+
+#delete{
+	margin: 40px 50px 30px 40px;
+    font-family:arial;
+    font-size:40px;
+	
+}
+marquee{
+	font-size:30px;
+}

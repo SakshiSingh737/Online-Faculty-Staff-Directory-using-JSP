@@ -1,0 +1,57 @@
+create table faculty (id number primary key, name varchar2(25), department varchar2(30), aoex varchar2(30), prfint varchar2(30))
+
+create table course(id number, courses varchar2(15), foreign key(id) references faculty(id))
+
+
+CREATE SEQUENCE myseq
+start with 100
+increment by 1
+maxvalue 1000
+nocycle;
+
+
+insert into faculty values (myseq.nextval, 'RAM SINGH', 'COMPUTER SCIENCE', 'Active Gaming', ' Computer Application') 
+insert into faculty values (myseq.nextval, 'RATAN TATA', 'ELECTRICAL DEPARTMENT', 'Online Learning', 'Blogging') 
+insert into faculty values (myseq.nextval, 'SALMAN KHAN', 'COMPUTER SCIENCE', 'Computer Technology', 'Distance Education')
+insert into faculty values (myseq.nextval, 'PRIYA MISHRA', 'IT DEPARTMENT', 'Online Learning', 'Multimedia')  
+insert into faculty values (myseq.nextval, 'ARNAV KUMAR', 'MECHANICAL DEPARTMENT', 'Solid Mechanics', 'Blogging')  
+
+select * from faculty
+SELECT * FROM COURSE;
+
+select myseq.NEXTVAL from dual
+
+INSERT ALL INTO 
+COURSE VALUES (100, 'DAA')
+INTO COURSE VALUES (100, 'DATABASE')
+INTO COURSE VALUES (100, 'WEBTECH')
+INTO COURSE VALUES (102, 'NETWORKING')
+INTO COURSE VALUES (101, 'SIGNAL')
+INTO COURSE VALUES (102, 'CYBER SECURITY')
+INTO COURSE VALUES (103, 'DATA STRUCTURES')
+INTO COURSE VALUES (104, 'MATHEMATICS')
+SELECT * FROM DUAL;
+
+INSERT ALL INTO 
+COURSE VALUES (101, 'ANTENNA')
+INTO COURSE VALUES (101, 'IC')
+INTO COURSE VALUES (104, 'FLUID MECHANICS')
+
+SELECT * FROM DUAL;
+
+
+drop table course
+drop table faculty
+
+
+
+INTO COURSE VALUES (11, 'CYBER SECURITY')
+
+
+SELECT COURSES FROM COURSE NATURAL JOIN FACULTY WHERE GENDER='MALE';
+
+SELECT NAME,COURSES FROM FACULTY NATURAL JOIN COURSE WHERE DEPARTMENT='COMPUTER SCIENCE';
+
+SELECT * FROM FACULTY NATURAL JOIN COURSE WHERE name='RAM SINGH';
+
+SELECT NAME,COURSES FROM FACULTY NATURAL JOIN COURSE WHERE GENDER='MALE';
